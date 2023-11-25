@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+a{
+  text-decoration: none;
+  display: block;
+}
+body{
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: url('../images/person.jpg');
+  background-repeat: no-repeat;
+}
+li{
+  list-style: none;
+}
+/* 共通 */
+
+header{
+  text-align: center;  
+  width: 1200px;
+  height: 130px;
+  margin: 0 auto;
+  background-color: skyblue;
+  
+  
+}
+header img{
+  margin-top: 12px;
+  padding: 0 6px;
+  transition: all .4s;
+}
+header img:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+  opacity: 0.9;
+}
+/* header content */
+ul.header_menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.wrapper{
+  position: absolute;
+  right: 40px;
+}
+.humbager_menu{
+  right: -140px;
+  position: absolute;
+}
+.humbager_menu li{
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.open-btn{
+  width:130px;
+  height:30px;
+  border-radius:2rem;
+  z-index: 200;
+}
+.side_menu{
+  background: orange;
+  text-align: center;
+  width: 80%;
+  height: 300px;
+  top: 30px;
+  right: 18px;
+  position: absolute;
+  z-index: 99;
+  transition: .5s;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uehara |v1</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/top.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="header_menu">
+        <a href="#">
+          <img src="images/kochipush.png" alt="Topへ" srcset="" />
+          <li>TOPへ</li>
+        </a>
+     
+        <a href="#">
+          <img src="images/purchase 2023-11-26 050156.png" alt="カート一覧" srcset="" />
+          <li>購入履歴</li>
+        </a>
+        <a href="#">
+          <img src="images/cart.png" alt="カート一覧" srcset="" />
+          <li>カートの中身</li>
+        </a>
+        <a href="#">
+          <img src="images/mypage.png" alt="マイページへ" srcset="" />
+          <li>マイページへ</li>
+        </a>
+        <div class="wrapper">
+          <button class="open-btn">カテゴリ</button>
+            <nav class="">
+              <ul class="humbager_menu">
+                <li><a href="高知名産1">高知名産1 </a></li>
+                <li><a href="高知名産1">高知名産1 </a></li>
+                <li><a href="高知名産1">高知名産1 </a></li>
+                <li><a href="高知名産1">高知名産1 </a></li>
+                <li><a href="高知名産1">高知名産1 </a></li>
+              </ul>
+            </nav>
+          </div>
+      </ul>
+
+    
+    </header>
+  
+    <script>
+      const nav = document.querySelector(".side_menu");
+      const openBtn = document.querySelector(".open-btn");
+      const humbager_menu = document.querySelector(".humbager_menu");
+      openBtn.addEventListener("click", () => {
+        humbager_menu.classList.toggle("side_menu");
+        if (openBtn.innerHTML === "カテゴリ") {
+          openBtn.innerHTML ='Close'
+        } else {
+          openBtn.innerHTML = "カテゴリ";
+        }
+      });
+    </script>
+  </body>
+</html>
